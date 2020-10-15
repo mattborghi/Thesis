@@ -1,0 +1,51 @@
+FUTURE IMPROVEMENTS
+===================
+
+
+WHAT TO DO NEXT
+----------------
+				
+				* Promediar de a bloques para evitar correlaciones entre los distintos steps -- > Bunching Method				
+				* Improve the subroutine ini_matriz so it arranges the initial configuration more equitativally when one of npos,nneg is < 0.3 approx 
+				Matrix method by Albano
+				
+				* Change implementation of periodic boundary conditions in rectangular mode
+				
+				
+
+
+LAST MODIFICATIONS
+------------------
+
+17/08/16 <- *modificar los archivos para condor // no print in terminal
+				--> save output files (*.dat) in a folder that depends on the config file
+				ie., name: alfa 111 t=0.9 n+=0.5 p+=0.5 aver=10 mcs=500mil L=20
+
+			* Modify code such that DeltaE is real
+					if (Delta_E == int (Delta_E) ) --> check if its integer
+						if it is integer then do the same as now
+					else
+						if it's not then calculate the exponential
+						exp(-Delta_E/Temp)
+			* Change the initial density of the particles
+			* Add neutral particles or gaps to the mixture
+			* Add a field that drives the particles and test it
+			* Estudiar el efecto de la mov diferencial sobre los espines positivos.
+
+01/03/16 <- * Modify the subroutine elegirsitio() with a simpler algorithm but much faster
+			* Modifty the subroutine CalCDeltaEnergy and exchangeSpin so the spins compared are not necesary with the one in the position i+1,j
+
+29/02/16 <- * Modify the cell sorting code to accept averages 
+			* Changed the entering condition in the equilibrium loop
+				from mod(i,MCS/npoints) to i > MCS-npoints.
+			  I was not entering after a certain number of loops. 
+
+27/12/15 <- * Implement a quantity that measures the cell sorting level of the final state
+			* Use the magnetization with double precision
+			* Implement the number of cells according to their state, ie ++, -+ , --
+			* Change the final temperature to a lower level (less than 0.92) --> It does not change anything using previous task
+
+29/10/15 <- * Implementar el archivo de configuracion  
+			* Change implementation of periodic boundary conditions in square mode
+			* Change energy calculation Kawasaki
+			* Add to the hamiltonian the matrix element alpha(si,sj) and test different combinations

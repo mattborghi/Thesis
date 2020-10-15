@@ -1,0 +1,6 @@
+SCHEME OF FILES AND FOLDERS
+===========================
+
+	* V1 Ising: Ising Model flipping spins
+	* V1 Kawasaki: The spins now are interchanged
+	* V2 Kawasaki: Implementation with the matrix alpha(si,sj)
