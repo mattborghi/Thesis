@@ -1,0 +1,21 @@
+nrows - number of rows of spins (even number)
+20
+ncols - number of columns of spins (even number)
+20
+npass - number of passes for each temperature
+30000
+high_temp - temperature to start scan at
+2.92
+low_temp - temperature to finish scan at
+0.92
+temp_interval - scanning interval
+.1
+alpha - alphaud
+1
+average - average
+50
+ConfigType - 1: checkerboard, 2: interface, 3: unequal interface
+1
+MovieOn - set to .true. when running for 1 temp to make movie
+.false.
+End of file.

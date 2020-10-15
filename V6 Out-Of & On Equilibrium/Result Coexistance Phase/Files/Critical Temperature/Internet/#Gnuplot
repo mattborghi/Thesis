@@ -1,0 +1,34 @@
+#Gnuplot
+#Files
+file1 = 'magnetization32'
+file11 = 'energy32'
+file2 = 'magnetization20'
+file22 = 'energy20'
+
+
+
+#Magnetization
+plot 'magnetization32' u 1:2 w lp ps 1 pt 7, file2 u 1:2 w lp ps 1 pt 7,'magnetization100' u 1:2 w lp ps 1 pt 7
+#Energia
+plot file11 u 1:2 w lp ps 1 pt 7, file22 u 1:2 w lp ps 1 pt 7, 'energy100' u 1:2 w lp ps 1 pt 7
+#Cap Calor
+plot file11 u 1:4 w lp ps 1 pt 7, file22 u 1:4 w lp ps 1 pt 7, 'energy100' u 1:4 w lp ps 1 pt 7
+#Susceptibilidad
+plot file1 u 1:5 w lp ps 1 pt 7, file2 u 1:5 w lp ps 1 pt 7, 'magnetization100' u 1:5 w lp ps 1 pt 7
+#Cumulante
+plot file1 u 1:(1 - $4/(3*$3**2) ) w lp ps 1 pt 7, file2 u 1:(1 - $4/(3*$3**2) ) w lp ps 1 pt 7, 'magnetization100' u 1:(1 - $4/(3*$3**2) ) w lp ps 1 pt 7
+
+#Magnetization colapsada 
+exp = 1/8 #beta/nu , beta=1/8
+plot file1 u (($1-2.269)/2.269):($2*(32**exp)) w lp ps 1 pt 7, file2 u (($1-2.269)/2.269):($2*(20**exp)) w lp ps 1 pt 7,'magnetization100' u (($1-2.269)/2.269):($2*(100**exp)) w lp ps 1 pt 7
+
+#Cumulante colapsado
+plot file1 u (($1-2.269)/2.269):(1 - $4/(3*$3**2) ) w lp ps 1 pt 7, file2 u (($1-2.269)/2.269):(1 - $4/(3*$3**2) ) w lp ps 1 pt 7, 'magnetization100' u (($1-2.269)/2.269):(1 - $4/(3*$3**2) ) w lp ps 1 pt 7
+
+#Capacidad calorifica colaspada
+exp = -0/1 #-alpha/nu , alpha=0 
+plot 'energy50' u (($1-2.269)/2.269):($4*(32**exp)) w lp ps 1 pt 7, 'energy20' u (($1-2.269)/2.269):($4*(20**exp)) w lp ps 1 pt 7,  'energy100' u (($1-2.269)/2.269):($4*(100**exp)) w lp ps 1 pt 7
+
+#Susceptibilidad colapsada
+exp = -7/4 #gamma/nu, nu = 1 , gamma = 7/4
+plot file1 u (($1-2.269)/2.269):($5*(32**exp)) w lp ps 1 pt 7, file2 u (($1-2.269)/2.269):($5*(20**exp)) w lp ps 1 pt 7,'magnetization100' u (($1-2.269)/2.269):($5*(100**exp)) w lp ps 1 pt 7

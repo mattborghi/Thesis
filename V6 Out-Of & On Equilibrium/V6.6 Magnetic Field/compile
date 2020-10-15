@@ -1,0 +1,3 @@
+gfortran -o runv2 ranmar_seed.f95 subroutines.f95 ising.f95 -O3 -ffree-line-length-none
+
+gfortran -o runv2 ranmar_seed.f95 subroutines.f95 ising.f95 -O3 -ffree-line-length-none -Wall -Wextra -fbounds-check -fbacktrace -Wno-tabs

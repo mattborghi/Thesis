@@ -1,0 +1,10 @@
+1) Run 'data.R'
+	-> In EACH 'L=--/' subfolder,
+	... Creates the 'fitmagnet.data' which is a file with only the magnetization, magnet squared and the mag field ordered.
+	... Also plots and saves the file 'Magnetization.pdf' which is the Magnetization vs H for different temps
+2) Run 'fitting.py'
+	-> In the same subfolders,
+	... Loads the 'fitmagnet.data' file, for each temp it gets the H->0 value of the magnetization and the magnetization squared and is saved in 'fitted.data' 
+3) Run 'collapsed.R'
+	-> For ALL the subfolders,
+	... From 'fitted.data' Creates the files for the susceptibility, reduced susceptibility and their collapsed couterparts.

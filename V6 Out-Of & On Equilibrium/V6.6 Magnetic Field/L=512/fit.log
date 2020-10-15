@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Fri Mar 10 13:19:07 2017
+
+
+FIT:    data read from 'fitmagnet.data' u ((($2>0.1)&($2<0.103))?$1:1/0):3
+        format = x:z
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*tanh(0.1015/x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.7930553725e+01   0.00e+00  8.51e-01    1.000000e+00   1.000000e+00
+   4 2.5969485420e-05  -4.41e-06  8.51e-05    1.000047e+00   1.905102e-03
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59695e-05
+rel. change during last iteration : -4.40847e-11
+
+degrees of freedom    (FIT_NDF)                        : 16
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00127401
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.62309e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.00005          +/- 0.0008235    (0.08234%)
+b               = 0.0019051        +/- 0.0005513    (28.94%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.839  1.000 
