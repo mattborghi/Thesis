@@ -1,0 +1,31 @@
+printOPT - if 1, displays conditions for DynamicLattic 0 no, 2 each step
+1
+iniseed - initial seed for random number generator
+2
+npos - number of positive spins 
+0.6
+nneg - number of negative spins
+0.4
+probpos - probability of picking positive spins
+0.9
+nrows - number of rows of spins 
+128
+ncols - number of columns of spins
+128
+MCS - number of Monte Carlo steps
+300000
+nequil - number of equilibration steps for each temperature
+100000
+temp - scanning interval
+0.9
+npoints - number of time points for the energy, magnetization,etc
+500
+average - number of averages 
+5
+alpha11 - alpha1 - alpha matrix element for interaction of both negative spins
+0.5
+alpha13 - alpha3 -alpha matrix element for interaction of a negative and a positive spin
+0.5
+alpha33 - alpha2 -alpha matrix element for interaction of both positive spins
+0.5
+End of file.
