@@ -4,3 +4,5 @@
 runv1
 runv2
 dllinux
+*.log
+*.dat

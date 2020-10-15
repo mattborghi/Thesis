@@ -1,0 +1,13 @@
+printOPT - if 1, displays conditions for DynamicLattic in each step 0 no, 2 in equilibrium,3 for 10 intermediate times
+0
+iniseed - initial seed for random number generator
+38
+MCS - number of Monte Carlo steps
+200000
+average - number of averages 
+1000
+alpha11 - alpha1 - alpha matrix element for interaction of both negative spins
+1
+alpha33 - alpha2 -alpha matrix element for interaction of both positive spins
+1
+End of file.
