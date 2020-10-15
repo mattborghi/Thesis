@@ -1,0 +1,13 @@
+For installing MPI you will need to do the following:
+
+$ sudo apt-get update
+$ sudo apt-get install libopenmpi-dev
+
+On other Ubuntu installations you will also have to do:
+
+$ sudo apt-get install openmpi-bin          # Already on the VM
+
+You should then be able to do the following:
+
+$ mpif90 test1.f90
+$ mpiexec -n 4 a.out
