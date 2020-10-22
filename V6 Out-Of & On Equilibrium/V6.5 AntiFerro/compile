@@ -1,0 +1,1 @@
+gfortran -o runv2 ranmar_seed.f95 subroutines.f95 kawasaki.f95 -O3 -ffree-line-length-none

@@ -1,8 +1,7 @@
 *.mod
 *.out
 *.exe
-runv1
-runv2
+runv*
 dllinux
 *.log
 *.dat

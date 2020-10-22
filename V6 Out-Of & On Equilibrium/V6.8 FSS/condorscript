@@ -1,0 +1,18 @@
+
+universe=standard
+requirements = Arch == "X86_64" && OpSys == "LINUX"
+  
+INDIR=/home/mborghi/CriticalTemperature
+EXCE=/home/mborghi/CriticalTemperature/CT_T2L16A1.exe
+CONTROLD=/home/mborghi/CriticalTemperature
+# RESERVED_SWAP = 0
+
+executable = $(EXCE)
+error = $(CONTROLD)/LogFiles/$(Cluster).$(Process).err
+log = $(CONTROLD)/LogFiles/$(Cluster).$(Process).log
+
+initialdir = $(INDIR)
+output = $(initialdir)/LogFiles/log.txt
+
+queue
+

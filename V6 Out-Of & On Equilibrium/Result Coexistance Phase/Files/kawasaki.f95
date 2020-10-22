@@ -46,28 +46,28 @@ implicit none
 	logical::dir_e
 	character(len=10):: stringL,stringMCS,stringAver,stringTemp,stringNpos,stringProbpos,stringAlpha
 
-	real,allocatable::temps(:) !19
-	real::TempMax=0.13,TempMin=0.005,step=0.01
-	!real::temps(7) = (/0.2,0.25,0.3,0.35,0.4,0.45,0.5/)
-	real::alphaVals(1) !21
-	real::posDsty(1) !6
+	!real,allocatable::temps(:) !19
+	!real::TempMax=0.002,TempMin=0.00001,step=0.00001
+	real::temps(1) = (/0.5/)
+	real::alphaVals(1) = (/-1.0/) !21
+	real::posDsty(1) =(/0.5/) !6
 
-	print *, 'size = ', int( (TempMax-TempMin)/real(step) )
-	allocate( temps( int( (TempMax-TempMin)/real(step) ) ) )
-	do t = 1, int( (TempMax-TempMin)/real(step) )
-		temps(t) = TempMin + step*t
+	!print *, 'size = ', int( (TempMax-TempMin)/real(step) )
+	!allocate( temps( int( (TempMax-TempMin)/real(step) ) ) )
+	!do t = 1, int( (TempMax-TempMin)/real(step) )
+	!	temps(t) = TempMin + step*t
 		!print *, temps(t)
-	end do
+	!end do
 	!print *,temps
 	!temps = (/ 0.5,0.7,0.9,1.0,1.1,1.3,1.6,2.0,2.3,2.5,3.0/)
 	!temps = (/1.0/)
 	
 	!alphaVals = (/3.0,2.9,2.8,2.7,2.6,2.5,2.4,2.3,2.2,2.1,2.0,1.9,1.8,1.7,1.6,1.5,1.4,1.3,1.2,1.1,1.0 /)
 	!alphaVals = (/-0.9,-0.8,-0.7,-0.6,-0.5,-0.4,-0.3,-0.2,-0.1,0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9 /)
-	alphaVals = (/ -1 /)
+	!alphaVals = (/-1.0 /)
 	
 	!posDsty = (/ 0.2,0.3,0.4,0.5,0.6,0.7/)
-	posDsty =(/0.5/)
+	!posDsty =(/0.5/)
 	!print *, 'dim = ',size(temps)
 	!do t = 1,size(temps)
 	!	print*, 'Element ',t,'Value = ',temps(t)

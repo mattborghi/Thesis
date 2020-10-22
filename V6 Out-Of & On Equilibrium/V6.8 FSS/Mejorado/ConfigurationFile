@@ -1,0 +1,25 @@
+printOPT - if 1, displays conditions for DynamicLattic 0 no, 2 each step,3 for 10 intermediate times,4 for saving file,5 for saving and showing
+0
+typeDynamics - if 1, Spin Flip dynamics, for 2, kawasaki dynams
+1
+iniseed - initial seed for random number generator
+12
+probPos - probability of picking positive spins
+0.5
+probNeg - probability of picking negative spins
+0.5
+MCS - number of Monte Carlo steps
+30000
+nequil - number of equilibration steps for each temperature
+10000
+pointStart - 0 for averaging quantities from the start(Out-of-Equilibrium MC), 1 from nequil time (Equil MC)
+1
+average - number of averages 
+1000
+alpha11 - alpha1 - alpha matrix element for interaction of both negative spins
+1
+alpha33 - alpha2 -alpha matrix element for interaction of both positive spins
+1
+ExternalField - External Magnetic Field
+0
+End of file.

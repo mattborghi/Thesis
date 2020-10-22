@@ -1,0 +1,4 @@
+A diferencia de la otra carpeta esta tiene como adicional calculado el ancho de la interfaz a partir de la densidad de espines.
+En la anterior solo se hace a partir de la densidad de enlaces.
+No es que este mal, sino que tinee menos informacion y el ancho del a interfaz esta calculada a partir de este metodo y no a partir
+de la densidad de espines
